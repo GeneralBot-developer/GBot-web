@@ -1,0 +1,86 @@
+/* ページ全体の設定 */
+body {
+    margin: 0;
+    font-family: "Avenir Next";
+}
+
+/* ヘッダー領域の設定 */
+.header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* メイン表示領域の設定 */
+.main-contents {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* サイドメニュー領域の設定 */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #EEEEEE;
+    z-index: 999;
+}
+
+/* サイドメニュー内、上部テキストの設定 */
+.side-menu p {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* サイドメニュー内、箇条書きの設定 */
+.side-menu ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* サイドメニュー内、子要素を持たないリスト項目の設定 */
+.side-menu ul li:not(.has-child-menu){
+    padding: 0.2rem 0.5rem;
+    border-left: 3px solid blue;
+}
+
+/* サイドメニュー内、子要素を持つリスト項目の設定 */
+.side-menu ul li.has-child-menu {
+    padding: 0.2rem 0.5rem;
+    border-left: 3px solid #EEEEEE;
+}
+
+/* サイドメニューの開閉ボタンの設定 */
+.side-menu .side-menu-button {
+    position: absolute;
+    top: 123px;
+    left: 300px;
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #EEEEEE;
+    writing-mode: vertical-rl;
+}
+
+/* サイドメニュー表示時に隠すためのブロックの設定 */
+.hide-contents {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    z-index: 998;
+}
+
+/* 最初に表示しない項目の設定 */
+.contents:not(.default-contents) {
+    display: none;
+}

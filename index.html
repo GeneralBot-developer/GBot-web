@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery講座第6回サンプルページ</title>
+
+        <!-- jQuery読み込み -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+        <!-- 各回ごとのJavaScriptファイル読み込み -->
+        <script type="text/javascript" src="./static/js/jquery-06.js"></script>
+
+        <!-- 必要に応じてcssファイル読み込み -->
+        <link rel="stylesheet" type="text/css" href="./static/css/style-06.css">
+    </head>
+    <body>
+        <!-- ヘッダー -->
+        <div class="header">
+            <h1 id="page-title">GeneralBot公式サイト</h1>
+        </div>
+
+        <!-- サイドメニュー領域 -->
+        <div class="side-menu">
+            <p>メニュー</p>
+            <ul>
+                <li class="contents1">ホーム</li>
+                <li class="contents2">メニュー2</li>
+                <li class="has-child-menu">メニュー3
+                    <ul>
+                        <li class="contents3-1">メニュー3-1</li>
+                        <li class="contents3-2">メニュー3-2</li>
+                        <li class="contents3-3">メニュー3-3</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="side-menu-button">サイドメニュー</div>
+        </div>
+
+        <!-- サイドメニュー表示時の他領域を隠す用 -->
+        <div class="hide-contents"></div>
+
+        <!-- メインコンテンツ -->
+        <div class="main-contents">
+
+            <!-- コンテンツ1 -->
+            <div class="contents contents1 default-contents">
+                <!-- スクロールできるよう改行を大量に入れる -->
+                <p>ようこそ！GeneralBot公式サイトへ！</p>
+                <p>このサイトは、GeneralBotのサイトです。</p>
+                <a href="https://discord.com/api/oauth2/authorize?client_id=878264570370748416&permissions=19653553206&scope=bot">ここから導入</a>
+            </div>
+
+            <!-- コンテンツ2 -->
+            <div class="contents contents2">
+                <p>コンテンツ2</p>
+            </div>
+
+            <!-- コンテンツ3-1 -->
+            <div class="contents contents3-1">
+                <p>コンテンツ3-1</p>
+            </div>
+
+            <!-- コンテンツ3-2 -->
+            <div class="contents contents3-2">
+                <p>コンテンツ3-2</p>
+            </div>
+
+            <!-- コンテンツ3-3 -->
+            <div class="contents contents3-3">
+                <p>コンテンツ3-3</p>
+            </div>
+        </div>
+    </body>
+</html>
